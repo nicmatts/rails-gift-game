@@ -1,0 +1,5 @@
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<h1><%= @person.name %></h1>
+
+<%= link_to("Delete", {:action => 'delete', :id => @person.id }) %>

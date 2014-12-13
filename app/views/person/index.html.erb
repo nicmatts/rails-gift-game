@@ -1,0 +1,11 @@
+<h1>Players</h1>
+
+<table>
+<% @people.each do |person| %>
+  <tr>
+    <td><%= link_to(person.name, {:action => 'show', :id => person.id }, :class =>'action show') %></td>
+  </tr>
+  <% end %>
+</table>
+
+<button><%= link_to("Add New", {:action => 'new'}, :class => 'back-link') %></button>
